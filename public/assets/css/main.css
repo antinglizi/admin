@@ -1,0 +1,1423 @@
+@charset "utf-8";
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+/*    background: #b3d4fc;
+*/    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html body {
+	font-family: Helvetica, Arial, "Lucida Grande", "Lucida Sans Unicode", STHeiti, Verdana;
+    /*background-color: #E7E7E7;*/
+}
+
+/*The distance between span tag and icon */
+.span-margin-right {
+    margin-right: 10px;
+    width: 15px;
+}
+
+.span-margin-left {
+    margin-left: 10px;
+    width: 15px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+.ml-120 {
+    margin-left: 120px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.w50 {
+    width: 50px;
+}
+
+.w80 {
+    width: 80px;
+}
+
+.w100 {
+    width: 100px;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.w150 {
+    width: 150px;
+}
+
+.w200 {
+    width: 200px;
+}
+
+.w398 {
+    width: 398px;
+}
+
+.w400 {
+    width: 400px;
+}
+
+.w450 {
+    width: 450px;
+}
+
+.w500 {
+    width: 500px;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.bg-green {
+    background-color: #6BC30D;
+}
+
+.font-green {
+    color: #6BC30D;
+}
+
+.font-red {
+    color: #D84A38;
+}
+
+.num-1 {
+    color: #6BC30D;
+    font-size: 18px;
+}
+
+.img-size {
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.required {
+    color: #E02222;
+    /*font-size: 16px;*/
+    padding-right: 5px;
+    /*line-height: 32px;*/
+}
+
+/*
+* The style of login, register, forgotpassword
+ */
+.login {
+    width: 600px;
+    padding: 50px;
+    border: 1px solid #CCCCCC;
+    background-color: #F5F5F5;
+}
+
+.login .entries {
+    padding-left: 380px;
+}
+
+.login .entries a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.login .entries a:hover {
+    color: #6BC30D;
+}
+
+.register {
+    width: 700px;
+    padding: 50px;
+    border: 1px solid #CCCCCC;
+    background-color: #F5F5F5;
+}
+
+.register .auto-jump {
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.register ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.register ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.register label a:hover {
+    color: #6BC30D;
+}
+
+.register label a:focus {
+    outline: none;
+    color: #337AB7;
+    text-decoration: none;
+}
+
+.protocol {
+
+}
+
+.protocol .scroll {
+    width: 100%;
+    height: 450px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.protocol h3 {
+    color: #000000;
+    border-left: 8px solid #6BC30D;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.protocol h4 {
+    color: #6BC30D;
+    font-weight: 500;
+    text-indent: 1em;
+}
+
+.protocol p {
+    text-indent: 1.5em;
+    font-size: 1em;
+}
+
+.protocol li {
+    font-size: 1em;
+}
+
+.protocol ul {
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.protocol dl {
+    text-indent: 1.5em;
+}
+
+.protocol dl dt {
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+.protocol dl dt:before {
+    content: "";
+    display: inline-block;
+    margin-right: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: #6BC30D;
+}
+
+.protocol dl dd {
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+.forgot-password-step {
+    width: 800px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.forgot-password-step ol {
+    list-style: none;
+    color: #B7B7B7;
+    text-align: center;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+.forgot-password-step ol li {
+    float: left;
+    width: 30%;
+    border-top: 5px solid #B7B7B7;
+}
+
+.forgot-password-step .step-normal {
+    background-image: url(http://www.10000times.com/assets/img/step.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 23px;
+    height: 23px;
+    color: #FFFFFF;
+    margin: -15px auto 0;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.forgot-password-step .step-end {
+    background-image: url(http://www.10000times.com/assets/img/step.png);
+    background-repeat: no-repeat;
+    background-position: -69px 0px;
+    width: 23px;
+    height: 23px;
+    color: #FFFFFF;
+    margin: -15px auto 0;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.forgot-password-step .step-active {
+    border-top-color: #7ABD54;
+}
+
+.forgot-password-step .step-active .step-normal {
+    background-position: -23px 0px;
+}
+
+.forgot-password-step .step-active .step-end {
+    background-position: -92px 0px;
+}
+
+.forgot-password-step .step-active span {
+    color: #7ABD54;
+}
+
+.forgot-password-step .step-done {
+    border-top-color: #CAECB6;
+}
+
+.forgot-password-step .step-done .step-normal {
+    background-position: -46px 0px;
+}
+
+.forgot-password-step .step-done span {
+    color: #CAECB6;
+}
+
+.forgot-password {
+    width: 700px;
+    padding: 50px;
+    border: 1px solid #CCCCCC;
+    background-color: #F5F5F5;
+}
+
+/* The definition of the header style */   
+#header {
+    position: relative;
+    width: 100%;
+    height: 51px;
+}
+
+#header .navbar {
+    margin: 0;
+}
+
+#header .navbar ul li a {
+    /*color: #000000;*/
+}
+
+#header .navbar-brand {
+    padding: 0;
+}
+
+#header .navbar-brand img {
+    margin-top: 1px;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+#header .scroll {
+    width: 290px;
+    height: 300px;
+    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+#content {
+    position: relative;
+    width: 100%;
+}
+
+#content-left {   
+    float: left;
+    width: 225px;
+}
+
+#content-left .navbar {
+    margin: 0;
+    border-width: 2px;
+    background-color: #F5F5F5;
+}
+
+#content-left .sidebar-menu {
+    color: #000000;
+}
+
+/* The config of the sidebar plug-in*/
+#content-left .sidebar-menu .arrow {
+    float: right;
+    line-height: 1;
+}
+
+#content-left .sidebar-menu .fa.arrow:before {
+    content: "\f100";
+}
+
+#content-left .sidebar-menu .active > a > .fa.arrow:before {
+    content: "\f103";
+}
+
+#content-left .sidebar-menu .active > a {
+    border-left: 5px solid #6BC30D;
+}
+
+#content-left .sidebar-menu ul li a {
+    color: #000000;
+}
+
+#content-left .sidebar-menu ul li a.active {
+    background-color: #6BC30D;
+    color: #FFFFFF;
+}
+
+#content-left .sidebar-menu .sidebar-menu-first {
+    border-bottom: 1px solid #6BC30D;
+}
+
+#content-left .sidebar-menu .sidebar-menu-first > a {
+    font-size: 16px;
+}
+
+#content-left .sidebar-menu .sidebar-menu-first > a:focus,
+#content-left .sidebar-menu .sidebar-menu-first > a:hover {
+    background-color: #CCCCCC;
+}
+
+#content-left .sidebar-menu .sidebar-menu-first > a.active:focus,
+#content-left .sidebar-menu .sidebar-menu-first > a.active:hover {
+    background-color: #6BC30D;
+}
+
+#content-left .sidebar-menu .sidebar-menu-second li {
+    padding-top: 5px;
+}
+
+#content-left .sidebar-menu .sidebar-menu-second a {
+    padding-left: 40px;
+}
+
+#content-left .sidebar-menu .sidebar-menu-second a:hover {
+    color: #6BC30D;
+}
+
+#content-left .sidebar-menu .sidebar-menu-second a.active:hover {
+    background-color: #6BC30D;
+    color: #FFFFFF;
+}
+
+#content-left .sidebar-menu .sidebar-menu-second li:first-child {
+    border-top: 1px solid #6BC30D;
+}
+
+#content-left .sidebar-menu .sidebar-menu-second li:last-child {
+    padding-bottom: 5px;
+}
+
+#content-right {
+    float: left;
+    margin-left: 20px;
+    /*border: 1px solid #F00;*/
+}
+
+#content-right .breadcrumb li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#content-right .breadcrumb li a:hover {
+    color: #6BC30D;
+}
+
+#content-right .breadcrumb li.active {
+    color: #6BC30D;
+}
+
+#content-right .row {
+    /*margin: 0;*/
+}
+
+#content-right .container-fluid {
+    /*padding: 0;*/
+}
+
+#content-right .col {
+    background-color: #00F;
+}
+
+#content-right .connect-status {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 4px solid #6BC30D;
+}
+
+#content-right .connect-status strong {
+    font-size: 16px;
+}
+
+#content-right .connect-status span {
+    font-size: 20px;
+}
+
+#content-right .order-new {
+    background-image: url(http://www.10000times.com/assets/img/new.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    width: 23px;
+    height: 17px;
+    overflow: hidden;
+}
+
+#content-right table {
+    white-space: nowrap;
+}
+
+#content-right table tbody tr td {
+   vertical-align: middle; 
+}
+
+#content-right table tr.col-name {
+    height: 50px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#content-right table tr.col-name th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#content-right table .sep-row {
+    height: 10px;
+}
+
+#content-right table tr.order-header {
+    background-color: #F5F5F5;
+}
+
+#content-right table tr.order-header td {
+    border-left: 0px none;
+    border-right: 0px none;
+    vertical-align: middle;
+}
+
+#content-right .order-header ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+#content-right .order-header ul li {
+    float: left;
+    width: 50%;
+}
+
+#content-right .order-header .print {
+    margin-left: 50px;
+    margin-top: -30px;
+}
+
+#content-right table .all-selector {
+    margin: 0px 6px 0px 10px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+#content-right .pager {
+    margin: 0px 20px 10px 0px;
+    text-align: right;
+}
+
+#content-right .pager .text {
+    margin-right: 10px;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+#content-right .pager .text b {
+    color: #6BC30D;
+}
+
+#content-right .pagination {
+    float: right;
+    margin-right: 10px;
+}
+
+#content-right .pagination .text {
+    margin-left: 30px;
+    line-height: 34px;
+    font-size: 16px;
+}
+
+#content-right .pagination .text b {
+    color: #6BC30D;
+}
+
+#content-right .table {
+    margin-bottom: 0px;
+}
+
+#content-right .modal-header {
+    background-color: #F5F5F5;
+}
+
+#content-right .timepicker {
+    width: 150px;
+    background-color: red;
+}
+
+#content-right .map {
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+}
+
+#content-right .scroll {
+    width: 100%;
+    height: 1200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#content-right .img-preview {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #F5F5F5;
+    border : 1px solid #BBBBBB
+}
+
+#content-right .img-preview img {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+}
+
+#content-right .fileinput-btn {
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#content-right .fileinput-btn input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    direction: ltr;
+}
+
+#content-right .img-loading {
+    height: 30px;
+    width: 150px;
+    margin-left: 30px;
+}
+
+#content-right .shop-show {
+    width: 100%;
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#content-right .shop-show ul {
+    padding: 0;
+    margin: 0;
+}
+
+#content-right .shop-show ul li {
+    display: list-item;
+    float: left;
+    list-style: none;
+    width: 25%;
+    height: 30px;
+    /*line-height: 30px;*/
+}
+
+#content-right .shop-selected {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+}
+
+#content-right .shop-selected ul {
+    padding: 0;
+    margin: 0;
+}
+
+#content-right .shop-selected ul li {
+    display: list-item;
+    float: left;
+    list-style: none;
+    width: 20%;
+    height: 25px;
+    /*line-height: 30px;*/
+}
+
+#content-right .user-security {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#content-right .user-security li {
+    height: 64px;
+}
+
+#content-right .user-security .col1 {
+    float: left;
+    margin-right: 32px;
+}
+
+#content-right .user-security .col1 .tick {
+    background-image: url(http://www.10000times.com/assets/img/msg.png);
+    background-repeat: no-repeat;
+    background-position: -64px 0px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+#content-right .user-security .col1 strong {
+    font-size: 18px;
+    height: 32px;
+    line-height: 32px;
+}
+
+#content-right .user-security .col2 {
+    float: left;
+    border-left: 1px solid #E6E6E6;
+    padding-left: 15px;
+    width: 550px;
+    height: 32px;
+    line-height: 32px;
+    color: #999999;
+    font-size: 12px;
+}
+
+#content-right .user-security .col2 strong {
+    color: #666666;
+}
+
+#content-right .user-security .col3 {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+}
+
+#content-right .user-security .col3 a {
+    text-decoration: none;
+}
+
+#content-right .user-security .col3 a:hover {
+    color:  #6BC30D
+}
+
+#content-right .useflow {
+    width: 100%;
+}
+
+#content-right .useflow ul {
+    list-style: none;
+    height: 100px;
+}
+
+#content-right .useflow ul li {
+    float: left;
+    width: 20%;
+    height: 100px;
+    line-height: 100px;
+}
+
+#content-right .useflow ul li span {
+    margin-left: 50px;
+    color: #6BC30D;
+}
+
+#content-right .useflow .circle {
+    float: left;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #6BC30D;
+    text-align: center;
+}
+
+#content-right .useflow .info {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+#content-right .freshbiz-trade {
+    width: 100%;
+}
+
+#content-right .freshbiz-trade ul {
+    list-style: none;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#content-right .freshbiz-trade ul li {
+    float: left;
+    height: 100px;
+    width: 33.3%;
+    border-right: 1px solid #EDEDED;
+    padding-left: 30px;
+}
+
+#content-right .freshbiz-trade .info-left {
+    display: inline-block;
+}
+
+#content-right .freshbiz-trade .info-right {
+    display: inline-block;
+    margin-left: 150px;
+    height: 100px;
+    line-height: 100px;
+}
+
+#content-right .freshbiz-trade .col1 {
+    border-bottom: 4px solid #6BC30D;
+}
+
+#content-right .freshbiz-trade .col1 h3 {
+    color: #6BC30D;
+}
+
+#content-right .freshbiz-trade .col1 .icon {
+    color: #6BC30D;
+}
+
+#content-right .freshbiz-trade .col2 {
+    border-bottom: 4px solid #337AB7;
+}
+
+#content-right .freshbiz-trade .col2 h3 {
+    color: #337AB7;
+    display: inline-block;
+}
+
+#content-right .freshbiz-trade .col2 .icon {
+    color: #337AB7;
+}
+
+#content-right .freshbiz-trade .col3 {
+    border-right: none;
+    border-bottom: 4px solid #D9534F;
+}
+
+#content-right .freshbiz-trade .col3 h3 {
+    color: #D9534F;
+    display: inline-block;
+}
+
+#content-right .freshbiz-trade .col3 .icon {
+    color: #D9534F;
+}
+
+#content-right .freshbiz-trade .unit {
+    font-size: 14px;
+    color: #999999;
+    margin-left: 5px;
+}
+
+#content-right .announce {
+
+}
+
+#content-right .announce .list-group {
+    margin-bottom: 0px;
+}
+
+#content-right .announce a {
+    display: block;
+    text-decoration:  none;
+    color: #222222;
+}
+
+#content-right .announce a:hover {
+    color: #6BC30D;
+}
+
+#content-right .announce-date {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #8D8D8D;
+}
+
+#content-right .rate {
+    width: 100%;
+}
+
+#content-right .rate .rate-user {
+    background-color: #F9F9F9;
+}
+
+#content-right .rate .content {
+    text-align: left;
+    white-space: normal;
+}
+
+#content-right .rate .explain {
+    text-align: left;
+    white-space: normal;
+    margin-top: 30px;
+}
+
+#content-right .biz-report {
+    width: 100%;
+}
+
+#content-right .biz-report .date {
+    width: 250px;
+}
+
+#content-right .biz-report .txt {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#content-right .biz-report .report-form {
+    /*height: 80px;*/
+}
+
+#content-right .biz-report .report-form .form-control[readonly] {
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+#content-right .biz-report .report-wrap {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#content-right .biz-report .report-wrap ul {
+    border-bottom: 4px solid #6BC30D;
+}
+
+#content-right .biz-report .report-wrap ul li.active a {
+    background-color: #6BC30D;
+}
+
+#content-right .biz-report .chart-title {
+    text-align: center;
+}
+
+#content-right .biz-report .chart-title h3 {
+    font-weight: bold;
+}
+
+#content-right .biz-report .chart-title h5 {
+   margin-bottom: 0px; 
+}
+
+#content-right .biz-report .chart-title .sum {
+   text-align: left;
+   margin-left: 30px;
+}
+
+#content-right .biz-report .chart-title .sum strong {
+    font-size: 20px;
+}
+
+#content-right .biz-report .chart-title .sum span {
+    font-size: 32px;
+    color: #6BC30D;
+    margin-left: 15px;
+}
+
+#content-right .biz-report .chart-title .sum .unit {
+    font-size: 16px;
+    color: #999999;
+    margin-left: 5px;
+}
+
+#content-right .biz-report .chart-container {
+    height: 450px;
+    margin-top: 10px;
+}
+
+#content-right .order-list {
+    width: 100%;
+}
+
+#content-right .order-list .time {
+    width: 250px;
+}
+
+#content-right .order-list .txt {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#content-right .finance-data {
+
+}
+
+#content-right .finance-data .txt {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#content-right .finance-data .report-form {
+
+}
+
+#content-right .finance-data .report-form .form-control[readonly] {
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+#content-right .finance-data .report-wrap {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 4px solid #6BC30D;
+}
+
+#content-right .finance-data .chart-title {
+    text-align: center;
+}
+
+#content-right .finance-data .chart-title h3 {
+    font-weight: bold;
+}
+
+#content-right .finance-data .chart-title h5 {
+   margin-bottom: 0px;
+}
+
+#content-right .finance-data .chart-title .sum {
+   text-align: left;
+}
+
+#content-right .finance-data .chart-title .sum strong {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+#content-right .finance-data .chart-title .sum span {
+    font-size: 30px;
+    color: #6BC30D;
+    margin-left: 10px;
+}
+
+#content-right .finance-data .chart-title .sum .unit {
+    font-size: 14px;
+    color: #999999;
+    margin-left: 5px;
+}
+
+#content-right .finance-data .chart-container {
+    height: 450px;
+    margin-top: 10px;
+}
+
+#content-right .order-detail {
+
+}
+
+#content-right .order-detail table {
+    margin-bottom: 0px;
+}
+
+#content-right .order-detail .order-table {
+
+}
+
+#content-right .order-detail .order-table tr td {
+    border-top: none;
+    width: 50%;
+}
+
+#content-right .order-detail .order-flow {
+    width: 1000px;
+    height: 95px;
+    margin: 30px auto;
+}
+
+#content-right .order-detail .order-flow ul {
+    list-style: none;
+}
+
+#content-right .order-detail .order-flow ul li {
+    float: left;
+    text-align: center;
+}
+
+#content-right .order-detail .order-flow ul li:nth-child(odd) {
+    width: 100px;
+}
+
+#content-right .order-detail .order-flow ul li:nth-child(even) {
+    width: 150px;
+}
+
+#content-right .order-detail .order-flow .node {
+    background-image: url(http://www.10000times.com/assets/img/state.jpg);
+    background-repeat: no-repeat;
+    background-position: -150px 0px;
+    height: 15px;
+    width: 15px;
+    margin: 10px auto;
+}
+
+#content-right .order-detail .order-flow .proc {
+    background-image: url(http://www.10000times.com/assets/img/state.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    height: 15px;
+    width: 150px;
+    margin-top: 30px;
+}
+
+#content-right .order-detail .order-flow .txt-up {
+    color: #333333;
+}
+
+#content-right .order-detail .order-flow .txt-down {
+    color: #999999;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+}
+
+#footer .company-info {
+   /* position: absolute;
+    bottom: 10px;
+    left: 0;*/
+   /* width: 100%;*/
+   border: 1px solid #e7e7e7;
+   background-color: #EFEFEF;
+}
+
+#footer .company-info p {
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/*The definition of animation*/
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

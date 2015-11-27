@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.order-print {
+	margin-top: 20px;
+	border: 1px solid #BBBBBB;
+	background-color: #F5F5F5;
+	box-shadow: 2px 2px 3px #AAAAAA;
+}
+
+.order-print-header {
+
+}
+
+.order-print-area {
+	float: left;
+	width: 80%;
+	margin: 20px 5px;
+	padding: 0px 30px;
+	border: 1px dashed #BBBBBB;
+	background-color: #FFFFFF;
+}
+
+.order-print-area h3 {
+	text-align: center;
+	font-weight: bold;
+}
+
+.order-print-area .user-info {
+	margin-top: 30px;
+}
+
+.order-print-area .user-info tr td {
+	border: 0px none;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.order-print-area .order-info {
+	
+}
+
+.order-print-area .order-info thead tr:nth-child(2) {
+	border-top: 3px solid #000000;
+}
+
+.order-print-area .order-info tbody tr:first-child {
+	/*border-top: 1px solid #000000;*/
+}
+
+.order-print-footer {
+
+}
+
+.order-print-control {
+	float: left;
+	margin: 50px 50px;
+}
